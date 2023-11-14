@@ -14,6 +14,7 @@ const getBusHandler=async(req,res)=>{
     }
   
  
+
    
     } catch (error) {
         console.log(`error is ${error}`)

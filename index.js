@@ -12,5 +12,6 @@ const app= express();
 app.use(express.json());
 
 //app.use('/bus',route);
-app.use('/mongo',routeMongo)
+
+
 app.listen(port);
