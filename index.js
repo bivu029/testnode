@@ -10,6 +10,7 @@ var PORT=3001;
 connection();
 const app= express();
 app.use(express.json());
+app.use('/mongo',routeMongo);
 
 //app.use('/bus',route);
 

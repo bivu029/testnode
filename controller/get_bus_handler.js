@@ -7,15 +7,9 @@ const getBusHandler=async(req,res)=>{
     try {
      
     const getbus=await BusModel.find();
-    if(getbus){
-        res.status(200).json(getbus);
-    }else{
-       res.send('timeocut')
-    }
+    res.status(200).json(getbus);
+    console.log(getbus);
   
- 
-
-   
     } catch (error) {
         console.log(`error is ${error}`)
         res.status(404).send(error);
